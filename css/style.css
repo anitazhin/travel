@@ -416,7 +416,7 @@ textarea {
   }
 
 
-  /*fomts end*/
+  /*fonts finish*/
 
   /*css start*/
   html {
@@ -440,8 +440,13 @@ textarea {
     margin: 0 auto;
   }
 
+  /*header styles start*/
   .header {
-    background-color: #000;
+    background-color: rgb(242, 120, 92, 0.7);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 0px 9px 3px rgba(13, 96, 111, .3);
   }
 
   .header-wrapper {
@@ -459,7 +464,6 @@ textarea {
     align-items: center;
     padding: 0px;
     gap: 42px;
-
   }
 
   .button-header-login {
@@ -470,8 +474,38 @@ textarea {
     padding: 10px 45px;
     gap: 10px;
 
-
+    color: white;  
     background: #0D606F;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
+    border: none;
+    
   }
+
+  .header-link {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: white;
+    text-decoration: none;
+    
+  }
+
+  .header-link:hover, header-link:focus, header-link:active {
+    opacity: 0.75;
+  }
+  /*header styles finish*/
+  /*main styles start*/
+
+  /*intro styles start*/
+  .intro {
+    height: 765px;
+    background: url(/img/intro-bg.jpg) no-repeat center;
+    background-size: cover;
+  }
+  /*intro styles finish*/
+
+
+  /*main styles finish*/
