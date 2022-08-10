@@ -438,6 +438,7 @@ textarea {
   .wrapper {
     max-width: 1440px;
     margin: 0 auto;
+    
   }
 
   /*header styles start*/
@@ -447,23 +448,27 @@ textarea {
     top: 0;
     width: 100%;
     box-shadow: 0px 0px 9px 3px rgba(13, 96, 111, .3);
+    padding-top: 35px;
+    padding-bottom: 34px;
   }
 
   .header-wrapper {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 35px;
-    padding-bottom: 34px;
+    justify-content: center;
+  }
+
+  .header-logo-link {
+    padding-right: 70px;
   }
 
   .header-list {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
-    gap: 42px;
+    justify-content: space-between
+    padding: 0px; 
+    gap:92px;
   }
 
   .button-header-login {
@@ -472,7 +477,6 @@ textarea {
     justify-content: center;
     align-items: center;
     padding: 10px 45px;
-    gap: 10px;
 
     color: white;  
     background: #0D606F;
@@ -499,13 +503,105 @@ textarea {
   /*header styles finish*/
   /*main styles start*/
 
-  /*intro styles start*/
-  .intro {
-    height: 765px;
+  /*preview styles start*/
+  .preview {
+    min-height: 765px;
     background: url(/img/intro-bg.jpg) no-repeat center;
     background-size: cover;
+    padding-top: 122px;
+    
   }
-  /*intro styles finish*/
 
+  .preview-wrapper {
+    max-width: 892px;
+    max-height: 422px;
+    padding-left: 120px;
+  }
+
+  .preview-title {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    color: #FFFFFF;
+    margin-bottom: 46px;
+  }
+
+  .preview-subtitle {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 36px;
+  }
+
+  .searchform-field {
+    width: 892px;
+    height: 95px;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2785C;
+    padding-left: 41px;
+
+  }
+  .searchform-field::placeholder{
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2785C;
+  }
+
+  .searchform-submit {
+    height: 59px;
+    width: 228px;
+    position: absolute;
+    top: 436px;
+    left: 812px;
+    border: none;
+    color: white;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .searchform-submit:hover, .searchform-submit:focus, .searchform-submit:active {
+    background: #083d47;
+  }
+
+  /*preview styles finish*/
+
+  /*3 steps styles start*/
+
+  .threesteps {
+    background: url(/img/3steps.png) no-repeat center;
+    height: 247px;
+    min-width: 1177px;
+    margin-top: 80px;
+    margin-left: 131px;
+    margin-right: 132px;
+    margin-bottom: 97px;
+  }
+
+  .popular-destinations {
+    background: url(/img/destinations.png) no-repeat center;
+    min-height: 1042px;
+  }
+
+  /*3 steps styles finish*/
 
   /*main styles finish*/
