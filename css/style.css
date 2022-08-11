@@ -606,13 +606,15 @@ textarea {
 
   /*3 steps styles finish*/
   /*travel stories styles start*/
+  .travel-stories{
+    max-height: 1331px;
+  }
   .travel-stories-wrap {
-    height: 1331px;
     background-repeat: no-repeat;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 1440px;
+    max-height: 1331px;
   }
 
     #blurred-bg {
@@ -625,6 +627,14 @@ textarea {
   }
   .travel-stories-text {
   position: relative;
+  }
+
+  .travel-stories a {
+    font-weight: bold;
+    color: #0D606F;
+  }
+  .travel-stories a:hover {
+    color: #083d47;
   }
 
   .travel-stories-header {
@@ -663,6 +673,7 @@ textarea {
     font-size: 35px;
     line-height: 42px;
     margin-bottom: 24px;
+    color: #0D606F;
   }
 
   .story-text {
@@ -671,6 +682,7 @@ textarea {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    color: #0D606F;
       } 
 
   .story1 {
@@ -689,5 +701,50 @@ textarea {
   display: flex;
 }
 
-  /*travel stories styles finish*/
-  /*main stylemax-width: 1201px;
+.story-img {
+  border-radius: 5.5%;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.see-more {
+  position: absolute;
+  top: 1150px;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 228px;
+  min-height: 59px;
+
+  background: #0D606F;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+
+  padding-left: 81px;
+}
+
+.arrow {
+  position: absolute;
+  top: 1130px;
+  width: 41px;
+  height: 41px;
+  left: 523px;
+  margin-right: 10px;
+  margin-bottom: 9.5px;
+}
+
+.see-more:hover, .searchform-submit:focus, .searchform-submit:active {
+  background: #083d47;
+}
+/*travel stories styles finish*/
+
+/*footer styles start*/
+.footer {
+  background: #000;
+}
+/*footer styles finish*/
