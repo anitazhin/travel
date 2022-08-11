@@ -450,6 +450,7 @@ textarea {
     box-shadow: 0px 0px 9px 3px rgba(13, 96, 111, .3);
     padding-top: 35px;
     padding-bottom: 34px;
+    z-index: 2;
   }
 
   .header-wrapper {
@@ -467,7 +468,7 @@ textarea {
     flex-direction: row;
     align-items: center;
     justify-content: space-between
-    padding: 0px; 
+    padding 0px; 
     gap:92px;
   }
 
@@ -600,8 +601,48 @@ textarea {
   .popular-destinations {
     background: url(/img/destinations.png) no-repeat center;
     min-height: 1042px;
+    margin-bottom: 100px;
   }
 
   /*3 steps styles finish*/
+  /*travel stories styles start*/
+  .travel-stories-wrap {
+    height: 1331px;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+  }
 
+    #blurred-bg {
+    position: absolute;
+    left: 0;
+    top: 2311px;
+    width: 100%;
+    height: 1270px;
+    opacity: 0.6;
+  }
+  .travel-stories-text {
+  position: relative;
+  }
+
+  .travel-stories-header {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: -1371px;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+  
+  }
+
+  
+  /*travel stories styles finish*/
   /*main styles finish*/
