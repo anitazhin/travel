@@ -433,6 +433,7 @@ textarea {
     line-height: 21px;
     color: white;
     font-weight: 500;
+    background: white;
   }
 
   .wrapper {
@@ -442,6 +443,9 @@ textarea {
   }
 
   /*header styles start*/
+  .favicon {
+    color: #F2785C;
+  }
   .header {
     background-color: rgb(242, 120, 92, 0.7);
     position: fixed;
@@ -456,27 +460,25 @@ textarea {
   .header-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+   justify-content: space-around;
   }
 
   .header-logo-link {
-    padding-right: 70px;
+    padding-left: 35px;
   }
 
   .header-list {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between
-    padding 0px; 
+    padding-right: 190px; 
     gap:92px;
   }
 
   .button-header-login {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: 100px;
     padding: 10px 45px;
 
     color: white;  
@@ -587,21 +589,47 @@ textarea {
   /*preview styles finish*/
 
   /*3 steps styles start*/
-
-  .threesteps {
-    background: url(/img/3steps.png) no-repeat center;
-    height: 247px;
-    min-width: 1177px;
-    margin-top: 80px;
-    margin-left: 131px;
-    margin-right: 132px;
-    margin-bottom: 97px;
+  .three-steps-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    padding-top: 40px;
   }
 
-  .popular-destinations {
-    background: url(/img/destinations.png) no-repeat center;
-    min-height: 1042px;
-    margin-bottom: 100px;
+  .three-steps-img {
+    display: flex;
+    justify-content: center;
+    min-height: 154px;
+    min-width: 1177px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 40px;
+  }
+
+  .destinations-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    padding-top: 40px;
+    margin-bottom: 46px;
+  }
+
+  .destinations-img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 167px;
   }
 
   /*3 steps styles finish*/
@@ -620,7 +648,7 @@ textarea {
     #blurred-bg {
     position: absolute;
     left: 0;
-    top: 2311px;
+    top: 2274px;
     width: 100%;
     height: 1270px;
     opacity: 0.6;
@@ -746,5 +774,32 @@ textarea {
 /*footer styles start*/
 .footer {
   background: #000;
+  position: absolute;
+  top: 3580.65px;
+}
+
+.footer-copyright {
+  position: absolute;
+  left: 635px;
+  top: -16px;
+  color: #000;
+  width: 260px;
+  height: 21px;
+
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.social-media-icons {
+  position: absolute;
+  top: -20px;
+  display: flex;
+  left: 1178px;
+  gap: 20px;
+  
 }
 /*footer styles finish*/
