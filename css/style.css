@@ -643,6 +643,51 @@ textarea {
   
   }
 
+  .the-stories {
+    color: #000;
+    position: relative;
+    max-width: 1204px;
+    top: -1306px;
+    margin-left: 119px;
+    
+  }
+
+  .story-text-only {
+    padding-left: 40px;
+  }
   
+  .story-title {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 24px;
+  }
+
+  .story-text {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+      } 
+
+  .story1 {
+    display: flex;
+    margin-bottom: 30px;
+  }    
+  .story2 {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .story3 {
+    display: flex;
+    margin-bottom: 30px;
+  }
+.story4 {
+  display: flex;
+}
+
   /*travel stories styles finish*/
-  /*main styles finish*/
+  /*main stylemax-width: 1201px;
