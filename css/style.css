@@ -452,7 +452,7 @@ textarea {
     background-color: rgb(242, 120, 92, 0.7);
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     box-shadow: 0px 0px 9px 3px rgba(13, 96, 111, .3);
     padding-top: 35px;
     padding-bottom: 34px;
@@ -471,6 +471,7 @@ textarea {
 
   .header-list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     padding-right: 190px; 
@@ -505,12 +506,42 @@ textarea {
   .header-link:hover, header-link:focus, header-link:active {
     opacity: 0.75;
   }
+
+  .header-burger{
+    width: 32px;
+    height: 32px;
+    position: relative;
+    display: none;
+  }
+
+  .burger-line {
+    display: block;
+    width: 100%;
+    height: 2.67px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+  }
+
+  .burger-line_first{
+    top: 0;
+  }
+  .burger-line_second{
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .burger-line_third{
+    bottom: 0;
+  }
+
+
   /*header styles finish*/
   /*main styles start*/
 
   /*preview styles start*/
   .preview {
-    min-height: 765px;
+    height: 765px;
     background: url(../img/intro-bg.jpg) no-repeat center;
     background-size: cover;
     padding-top: 122px;
@@ -570,8 +601,8 @@ textarea {
     height: 59px;
     width: 228px;
     position: absolute;
-    top: 436px;
-    left: 812px;
+    top: 438px;
+    left: 772px;
     border: none;
     color: white;
     background: #0D606F;
@@ -836,3 +867,38 @@ textarea {
   gap: 20px;
 }
 /*footer styles finish*/
+
+/* media start*/
+
+@media screen and (max-width: 390px) {
+  *, :before, :after {
+    box-sizing: border-box; // habit
+    margin: 0;
+    padding: 0;
+}
+  
+  .header-burger{
+    display: block;
+  }
+
+  .header-nav{
+    width: 100vw;
+    height: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ff6445;
+    z-index: 10;
+    padding-right: 15px;
+    padding-left: 44px;
+    padding-top: 44px;
+    padding-bottom: 30px;
+  }
+
+  .header-item{
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/*media end*/
