@@ -475,7 +475,7 @@ textarea {
     flex-direction: row;
     align-items: center;
     padding-right: 190px; 
-    gap:92px;
+    margin-right: 90px;
   }
 
   .button-header-login {
@@ -506,6 +506,7 @@ textarea {
   .header-link:hover, header-link:focus, header-link:active {
     opacity: 0.75;
   }
+
 
   .header-burger{
     width: 32px;
@@ -707,9 +708,6 @@ textarea {
 
   /*3 steps styles finish*/
   /*travel stories styles start*/
-    .travel-stories {
-    
-    }
   
     .stories-wrap {
       overflow: hidden;
@@ -868,15 +866,15 @@ textarea {
   top:3635px;
   left: 1200px;
   display: flex;
-  gap: 20px;
+  margin-right: 90px;
 }
 /*footer styles finish*/
 
 /* media start*/
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 391px) {
   *, :before, :after {
-    box-sizing: border-box; // habit
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -885,24 +883,69 @@ textarea {
     display: block;
   }
 
+  .header-list {
+    padding: 0;
+    margin: 30px;
+  }
+
   .header-nav{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vw;
     position: fixed;
     top: 0;
     left: 0;
-    background: #ff6445;
+    background: #F2785C;
     z-index: 10;
-    padding-right: 15px;
-    padding-left: 44px;
+    padding-left: 50px;
     padding-top: 44px;
     padding-bottom: 30px;
+    transform: translateX(100%);
+    transition: .2s all linear;
+  }
+
+  .header-nav-active{
+    transform: translateX(0%);
   }
 
   .header-item{
     width: 100%;
-    margin: 0;
+  }
+
+  .header-link {
+    float: right;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .header-nav-close{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    z-index: 11;
+  }
+
+  .header-nav-close-line{
+    display: block;
+    height: 2.67px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 50%;
+  }
+
+  .header-nav-close-line:first-child{
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .header-nav-close-line:last-child{
+    transform: translateY(-50%) rotate(-45deg);
   }
 }
+
 
 /*media end*/
