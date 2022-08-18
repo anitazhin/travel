@@ -481,15 +481,17 @@ textarea {
   .button-header-login {
     position: absolute;
     top: 30px;
-    right: 100px;
+    right: 180px;
     padding: 10px 45px;
-
     color: white;  
     background: #0D606F;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
-    border: none;
-    
+    border: none; 
+  }
+
+  .header-item{
+    padding-right: 80px;
   }
 
   .header-link {
@@ -500,7 +502,6 @@ textarea {
     line-height: 21px;
     color: white;
     text-decoration: none;
-    
   }
 
   .header-link:hover, header-link:focus, header-link:active {
@@ -534,10 +535,6 @@ textarea {
 
   .burger-line_third{
     bottom: 0;
-  }
-
-  .button-header-login{
-    display: none;
   }
 
 
@@ -599,7 +596,7 @@ textarea {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-    color: #F2785C;
+    color: #F2785C; 
   }
 
   .searchform-submit {
@@ -806,10 +803,8 @@ textarea {
 }
 .see-more-button {
   position: absolute;
-  top: 3524px;
-  right: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 3495px;
+  left: 640px;
   min-width: 228px;
   min-height: 59px;
 
@@ -871,6 +866,60 @@ textarea {
 /*footer styles finish*/
 
 /* media start*/
+@media screen and (max-width: 1251px) {
+  .header-logo-pic{
+    display: none;
+  }
+}
+@media screen and (max-width:1040px) {
+  .preview-wrapper{
+    padding-left: 50px;
+  }
+
+  .searchform-submit{
+    left: 700px;
+  }
+}
+
+@media screen and (max-width: 1033px) {
+  .header-wrapper{
+    padding-left: 80px;
+    width: 100%;
+  }
+
+  .button-header-login{
+    top: 40px;
+    right: 92px;
+  }
+
+  .header-list{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 988px) {
+  .header-wrapper{
+    width: 100%;
+  }
+  .header-list{
+    width: 100vw;
+    padding-left: 70px;
+  }
+}
+@media screen and (max-width: 979px) {
+
+  .header-list{
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (max-width: 959px) {
+  .searchform-field{
+    width: 80vw;
+  }
+  .searchform-submit{
+    left: 59vw;
+    width: 25vw;
+  }
+}
 
 @media screen and (max-width: 391px) {
   *, :before, :after {
@@ -878,7 +927,9 @@ textarea {
     margin: 0;
     padding: 0;
 }
-  
+  .button-header-login{
+    display: none;
+  }
   .header-burger{
     display: block;
   }
@@ -908,7 +959,7 @@ textarea {
   }
 
   .header-item{
-    width: 100%;
+    padding-right: 80px;
   }
 
   .header-link {
@@ -945,6 +996,7 @@ textarea {
   .header-nav-close-line:last-child{
     transform: translateY(-50%) rotate(-45deg);
   }
+
 }
 
 
