@@ -536,6 +536,9 @@ textarea {
   .burger-line_third{
     bottom: 0;
   }
+  .header-logo-vector{
+    display: none;
+  }
 
 
   /*header styles finish*/
@@ -645,6 +648,10 @@ textarea {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 40px;
+  }
+
+  .steps-mobile{
+    display: none;
   }
 
   /* three steps button FIND MORE*/
@@ -1101,6 +1108,71 @@ textarea {
 }
 
 @media screen and (max-width: 391px) {
+  .header{
+    background: transparent;
+    box-shadow: none;
+  }
+  .preview-title{
+    display: none;
+  }
+  .preview-subtitle{
+    display: none;
+  }
+  .header-logo-vector{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 42px;
+  }
+
+  .start-planning{
+    position: absolute;
+    top: 442px;
+  }
+  .searchform-field{
+    width: 360px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .searchform-submit{
+    top: -37px;
+    width: 92px;
+    height: 30px;
+    font-size: 11px;
+    line-height: 15px;
+  }
+.three-steps-title{
+  display: none;
+}
+.stepspic{
+  display: none
+}
+.steps-mobile{
+  display: block;
+  position: absolute;
+  top: 771px;
+  left: 15px;
+}
+.popular-destinations{
+  left: 15px;
+}
+.destinations-title{
+  font-size: 20px;
+}
+.find-more-button{
+  top: 350px;
+}
+.button-find-more{
+  width: 92px;
+}
+.travel-stories{
+  display: none;
+}
+
+
   *, :before, :after {
     box-sizing: border-box;
     margin: 0;
