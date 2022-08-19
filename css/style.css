@@ -659,8 +659,8 @@ textarea {
     position: absolute;
     top: 1062px;
     left: 605px;
-    min-width: 228px;
-    min-height: 59px;
+    max-width: 228px;
+    height: 59px;
 
     background: #0D606F;
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
@@ -813,8 +813,8 @@ textarea {
   position: absolute;
   top: 3495px;
   left: 640px;
-  min-width: 228px;
-  min-height: 59px;
+  max-width: 228px;
+  height: 59px;
 
   background: #0D606F;
   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
@@ -1163,15 +1163,76 @@ textarea {
   font-size: 20px;
 }
 .find-more-button{
+  padding-left: 40px;
+  padding-right: 10px;
   top: 350px;
+  min-width: 97px;
+  font-size: 14px;
+  height: 30px;
 }
-.button-find-more{
-  width: 92px;
+.arrow-find{
+  top: 355px;
+  width: 20px;
 }
-.travel-stories{
-  display: none;
+#travel-stories{
+  top: 0;
+  line-height: normal;
+  font-size: 20px;
+}
+.travel-stories-text{
+  position: absolute;
+  top: 1350px;
+  width: 100%;
+}
+.travel-stories-header{
+  display: block;
+  z-index: 11;
 }
 
+#travel-stories-boat-img{
+  top: 1380px;
+  height: 680px;
+}
+#blurred-bg{
+  top: 1380px;
+  height: 640px;
+}
+.stories-wrap{
+  top: 1390px;
+  width: 90%;
+}
+.story-img{
+  height: 30vw;
+}
+.story-text-only{
+  padding-left: 10px;
+  margin: 0;
+}
+.story-title{
+  line-height: normal;
+}
+.story-text{
+  font-size: 6px;
+}
+.see-more-button{
+  top: 1970px;
+  min-width: 92px;
+  height: 30px;
+  font-size: 14px;
+  padding-left: 50px;
+  padding-right: 10px;
+}
+.arrow-see{
+  top: 1975px;
+  width: 20px;
+}
+.footer-copyright{
+  display: none;
+}
+.social-media-icons{
+  top: 2020px;
+  left: 43%;
+}
 
   *, :before, :after {
     box-sizing: border-box;
