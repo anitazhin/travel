@@ -7,7 +7,6 @@
     <title>Explore the beauty of the World</title>
     <link rel="stylesheet" href="./css/style.css">
     <link class="favicon" rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <script src="index.js"></script>
 </head>
 <body>
     <header class="header">
@@ -16,6 +15,9 @@
             <div class="header-logo">
                 <a href="/" class="header-logo-link">
                     <img src="img/logo.png" alt="Explore the beauty of the World" class="header-logo-pic">
+                </a>
+                <a href="/" class="header-logo-link">
+                    <img src="img/vector.png" alt="Explore the beauty of the World" class="header-logo-vector">
                 </a>
             </div>
                 <nav class="header-nav">
@@ -34,13 +36,22 @@
                         </li>
                     </ul>
                     <button class="button-header-login">Login</button>
+                    <div class="header-nav-close">
+                        <span class="header-nav-close-line"></span>
+                        <span class="header-nav-close-line"></span>
+                    </div>
                 </nav>
+                <div class="header-burger burger">
+                    <span class="burger-line burger-line_first"></span>
+                    <span class="burger-line burger-line_second"></span>
+                    <span class="burger-line burger-line_third"></span>
+                </div>
             </div>
-        </div>
+        
     </header>
     <main class="main">
         <section class="preview">
-            <div class="wrapper">
+            
                 <div class="preview-wrapper">
                 <h1 id="how-it-works" class="preview-title">
                     Explore the beauty of the World
@@ -55,15 +66,16 @@
                     </p>
                 </form>
                 </div>
-            </div>
+            
         </section>
         <section class="threesteps">
             <div class="three-steps-title">
                 <h2 id="3-steps" class="three-steps-title">3 steps to the perfect trip</h2>
             </div>
             <div class="three-steps-img">
-                <img src="img/3steps.jpg" alt="3 steps for your trip" class="threesteps">
+                <img src="img/3steps.jpg" alt="3 steps for your trip" class="stepspic">
             </div>
+            <img src="img/3steps-mobile.jpg" alt="3 steps for your trip" class="steps-mobile">
 
         </section>
         <section class="popular-destinations">
@@ -135,5 +147,7 @@
             </div>
         </div>
     </footer>
+</div>  
+<script src="index.js"></script>
 </body>
 </html>
