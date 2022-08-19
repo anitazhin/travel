@@ -4,7 +4,8 @@ console.log('1. верстка валидная +10,\n 2. верстка сем�
 (function () {
     const burgerItem = document.querySelector('.burger');
     const menu = document.querySelector('.header-nav');
-    const menuCloseItem = document.querySelector('.header-nav-close')
+    const menuCloseItem = document.querySelector('.header-nav-close');
+
     burgerItem.addEventListener('click', () => {
         menu.classList.add('header-nav-active');
     });
