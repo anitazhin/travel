@@ -1315,6 +1315,14 @@ textarea {
     height: 10px;
   }
 }
+@media screen and (max-width: 413px) {
+  .see-more-button{
+    top: 1195px;
+  }
+  .arrow-see{
+    left: 170px;
+  }
+}
 
 @media screen and (max-width: 391px) {
 
