@@ -1,2 +1,1 @@
-# anitazhin-JSFEPRESCHOOL2022Q2
-Private repository for @anitazhin
+https://anitazhin.github.io/travel/
